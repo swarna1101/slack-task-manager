@@ -1,7 +1,7 @@
 import { StepConfig, StepHandler } from 'motia';
 import { z } from 'zod';
 
-// In-memory task storage (in a real app, you'd use a database)
+
 const tasks: Array<{
   id: string;
   text: string;
