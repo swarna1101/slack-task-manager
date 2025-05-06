@@ -28,7 +28,9 @@ export const config: ApiRouteConfig = {
   bodySchema: inputSchema,
   flows: ['default'],
   emits: ['task_created', 'task_reminder', 'task_completed'],
+  virtualSubscribes: ['/slack/command'],
 }
+
 
 export const handler: StepHandler<typeof config> = async (req: ApiRequest, { logger, emit }) => {
   try {

@@ -5,6 +5,11 @@ export const config: NoopConfig = {
   name: 'Flow Starter',
   description: 'Start the default flow',
   virtualSubscribes: [],
-  virtualEmits: ['/default'],
+  virtualEmits: [{
+    topic: '/slack/command',
+    label: 'Task Created',
+    
+  }],
   flows: ['default'],
+
 } 

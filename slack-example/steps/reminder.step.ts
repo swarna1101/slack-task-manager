@@ -16,6 +16,7 @@ export const config: StepConfig = {
   input: inputSchema,
   subscribes: ['task_reminder'],
   emits: [],
+  flows: ['default'],
 };
 
 export const handler: StepHandler<typeof config> = async (input, { logger }) => {
